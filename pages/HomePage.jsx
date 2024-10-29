@@ -48,7 +48,7 @@ const HomePage = () => {
     );
   }
 
-  // Render the error message
+ 
   if (error) {
     return (
       <Container className="text-center mt-5">
