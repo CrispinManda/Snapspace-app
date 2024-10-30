@@ -19,7 +19,7 @@ const LandingPage = () => {
             size="lg"
             tag={Link}
             to="/login" 
-            className="me-2 mt-4"
+            className="me-2 mt-4 mb-4"
             active
           >
             Get Started
