@@ -60,7 +60,7 @@ const AlbumDetail = () => {
         {photos.map((photo) => (
           <Col key={photo.id} xs={12} sm={6} md={4} lg={3} className="mb-4">
             <Card className='h-100' style={{ width: '100%' }}>
-              <Card.Img variant="top" src={photo.url} />
+              <Card.Img variant="top" src={photo.url} alt={photo.title} />
               <Card.Body>
                 {editPhotoId === photo.id ? (
                   <>
