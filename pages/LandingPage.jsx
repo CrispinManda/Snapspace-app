@@ -14,9 +14,16 @@ const LandingPage = () => {
           </small>
           <h1>Welcome to the Album Management App</h1>
           <p>This app allows you to view users, their albums, and photos.</p>
-          <MDBBtn size="lg" tag="a" href="/login" className="me-2 mt-4" active>
+          <MDBBtn
+            size="lg"
+            tag="a"
+            href={`${window.location.origin}/login`} 
+            className="me-2 mt-4"
+            active
+            >
             Get Started
           </MDBBtn>
+
         </Col>
 
         

@@ -5,7 +5,10 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
-
+.me-2 {
+    background-color: rgb(226, 13, 13) !important;
+  }
+  
 
 @media (max-width: 576px) {
     .background-section {

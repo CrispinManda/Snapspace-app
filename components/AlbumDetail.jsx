@@ -90,7 +90,7 @@ const AlbumDetail = () => {
                   <>
                     <Card.Title>{photo.title}</Card.Title>
                     <Button
-                      variant="warning"
+                      className="btn-red" 
                       onClick={() => {
                         setEditPhotoId(photo.id); 
                         setNewTitle(photo.title);
