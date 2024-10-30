@@ -42,8 +42,8 @@ function LoginPage() {
         <div
           className="card shadow mb-3"
           style={{
-            width: '100%', // Make the card take full width of the column
-            maxWidth: '30rem', // Set a max-width for larger screens
+            width: '100%', 
+            maxWidth: '30rem',
             height: '450px',
             padding: '20px',
             boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',

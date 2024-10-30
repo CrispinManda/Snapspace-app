@@ -52,7 +52,7 @@ const UserDetail = () => {
   return (
     <Container className="full-height mt-4">
       <h1>{user.name}'s Albums</h1>
-      <Row className="g-4">  {/* Added gap between columns */}
+      <Row className="g-4">  
         {albums.map((album) => (
           <Col key={album.id} md={6} lg={4}>
             <Card className="h-100 border-0">
