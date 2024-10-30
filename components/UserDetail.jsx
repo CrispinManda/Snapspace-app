@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ListGroup, Container } from 'react-bootstrap';
 import { BeatLoader } from 'react-spinners';
 import { fetchUserById, fetchAlbumsByUser } from '../services/api';
+import './UserDetail.css'; 
 
 const UserDetail = () => {
   const { id } = useParams();
@@ -40,7 +41,7 @@ const UserDetail = () => {
   }
 
   return (
-    <Container>
+    <Container className="full-height">
       <h1>{user.name}</h1>
       <ListGroup>
         {albums.map((album) => (
