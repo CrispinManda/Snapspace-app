@@ -8,20 +8,24 @@ const MyNavbar = () => {
 
   return (
     <Navbar className='bg' variant="dark" expand="lg">
-      <Navbar.Brand as={Link} to="/">Album Manager</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/"><h1>Snapspace</h1></Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link as={Link} to="/">Home</Nav.Link>
       </Nav>
-      <Nav>
+      <Nav className="ms-auto">
         {user ? (
           <>
             <span className="navbar-text me-3">
               Welcome, {user.given_name || user.name.split(" ")[0]}
             </span>
-            <Button variant="outline-light" onClick={logout}>Logout</Button>
+            <Button className='me-5' variant="outline-light" onClick={logout}>Logout</Button>
           </>
         ) : (
-          <Nav.Link as={Link} to="/login">Login</Nav.Link>
+          <div className="flex-end">
+            <Button className=' text-white me-5 ' as={Link} to="/login" variant="outline-light">
+              Login
+            </Button>
+          </div>
         )}
       </Nav>
     </Navbar>

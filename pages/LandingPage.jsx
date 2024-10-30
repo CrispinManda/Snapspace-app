@@ -2,6 +2,7 @@ import './LandingPage.css';
 import { Row, Col } from 'react-bootstrap';
 import { MDBBtn } from 'mdb-react-ui-kit';
 import { MDBContainer } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
@@ -16,11 +17,11 @@ const LandingPage = () => {
           <p>This app allows you to view users, their albums, and photos.</p>
           <MDBBtn
             size="lg"
-            tag="a"
-            href={`${window.location.origin}/login`} 
+            tag={Link}
+            to="/login" 
             className="me-2 mt-4"
             active
-            >
+          >
             Get Started
           </MDBBtn>
 
