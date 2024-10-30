@@ -3,6 +3,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { BeatLoader } from 'react-spinners'; 
 import { fetchUsers, fetchAlbumsByUser } from '../services/api';
+import './HomePage.css'
 
 const HomePage = () => {
   const [users, setUsers] = useState([]);
@@ -51,7 +52,7 @@ const HomePage = () => {
  
   if (error) {
     return (
-      <Container className="text-center mt-5">
+      <Container className=" mt-5">
         <p>{error}</p>
       </Container>
     );
@@ -59,7 +60,7 @@ const HomePage = () => {
 
   return (
     <Container className="mt-5">
-      <h1 className="mb-4">Users</h1>
+      <h1 className="mb-4 ">Users</h1>
       <Row>
         {users.map((user) => (
           <Col md={4} key={user.id} className="mb-4">
@@ -76,9 +77,10 @@ const HomePage = () => {
                   Email: {user.email} <br />
                   Albums: {getAlbumCount(user.id)}
                 </Card.Text>
-                <Link to={`/user/${user.id}`} className="btn btn-primary">
-                  View Details
-                </Link>
+                <Link to={`/user/${user.id}`} className="btn btn-red">
+  View Details
+</Link>
+
               </Card.Body>
             </Card>
           </Col>
