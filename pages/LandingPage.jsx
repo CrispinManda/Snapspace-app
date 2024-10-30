@@ -17,7 +17,7 @@ const LandingPage = () => {
           <MDBBtn
             size="lg"
             tag="a"
-            href={`${window.location.origin}/login`} // This sets the href to your domain + /login
+            href={`${window.location.origin}/login`} 
             className="me-2 mt-4"
             active
             >

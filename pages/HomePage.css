@@ -1,6 +1,6 @@
 .btn-red {
     background-color: rgb(226, 13, 13) !important;
-    color: white !important;  /* Ensures text is readable */
+    color: white !important; /* Ensures text is readable on red background */
     border-color: rgb(226, 13, 13) !important;
   }
   
