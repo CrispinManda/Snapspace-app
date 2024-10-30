@@ -1,8 +1,14 @@
 .background-section {
     background-image: url('/images/bg.jpg');
-    background-size: cover;       
-    background-position: center;   
-    background-repeat: no-repeat;  
-    height: 100vh;                
-    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+@media (max-width: 576px) {
+    .background-section {
+        height: 40vh;
+    }
 }
